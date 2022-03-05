@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>TMDb Movie Search</title>
+  </head>
+  <body>
+    <header>
+      <div class="imgBOX">
+        <img class="iconImg" src="./img/tmdb.svg" alt="" />
+      </div>
+      <div class="searchBar">
+        <input
+          class="input"
+          type="search"
+          id="site-search"
+          name="q"
+          aria-label="Search through site content"
+          placeholder="Search Movie Title"
+        />
+        <button id="searchButton">Search</button>
+      </div>
+    </header>
+    <section>
+      <div class="posterBox">
+        <img class="poster" src="./img/poster.jpg" alt="" />
+      </div>
+      <div class="info">
+        <h1 class="h1title">INTERSTELLAR</h1>
+        <h3 class="h3introduction">
+          Mankind was born on Earth. It was never meant to die here.
+        </h3>
+        <p class="moviewTextInfo">
+          The adventures of a group of explorers who make use of a newly
+          discovered wormhole to surpass the limitations on human space travel
+          and conquer the vast distances involved in an interstellar voyage.
+        </p>
+        <h3 class="genres">Adventure, Drama, Science Fiction</h3>
+        <p class="companies">
+          Legendary Pictures, Syncopy, Lynda Obst Productions
+        </p>
+        <div class="smalltitles">
+          <p class="smalltitle original">
+            Original Release: <br />
+            <span class="movieData day">2014-11-05</span>
+          </p>
+          <p class="smalltitle runningTime">
+            Running Time: <br />
+            <span class="movieData min">169 mins</span>
+          </p>
+          <p class="smalltitle box">
+            Box Office: <br />
+            <span class="movieData money">$701,729,206</span>
+          </p>
+          <p class="smalltitle average">
+            Vote Average: <br />
+            <span class="movieData number">8.4 / 10</span>
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="./app.js"></script>
+</html>

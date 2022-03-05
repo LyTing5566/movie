@@ -1,0 +1,172 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://image.tmdb.org/t/p/original/xJHokMbljvjADYdit5fK5VQsXEG.jpg");
+  line-height: 1.2;
+}
+
+header {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  padding-top: 16px;
+  width: 80%;
+  margin-bottom: 28px;
+}
+.imgBOX {
+  width: 40%;
+  display: flex;
+}
+
+.iconImg {
+  /* position: absolute; */
+  width: 100%;
+  max-width: 140px;
+  /* left: 50px; */
+}
+
+.searchBar {
+  /* position: relative; */
+  outline: none;
+  width: 60%;
+}
+
+input {
+  /* position: absolute; */
+  /* width: 450px; */
+  right: 150px;
+  top: 28px;
+  padding: 5px 10px 10px 10px;
+  background: none;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  color: #f9f9f9;
+  justify-content: center;
+}
+
+.moviewTextInfo,
+.companies {
+  color: #f9f9f9;
+  margin-bottom: 20px;
+  background: none;
+  outline: none;
+  border: none;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.posterBox {
+  width: 40%;
+  display: flex;
+  justify-content: end;
+  object-fit: contain;
+}
+
+h1 {
+  color: #f9f9f9;
+  font-size: 40px;
+  padding: 12px 0px;
+}
+
+h3 {
+  color: #08e087;
+}
+
+.poster {
+  width: 100%;
+}
+
+.info {
+  width: 60%;
+  padding: 0 25px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.smalltitles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 10px;
+}
+
+.smalltitle {
+  color: #f9f9f9;
+  font-size: 18px;
+}
+.movieData {
+  color: #08e087;
+  font-size: 28px;
+}
+
+#searchButton {
+  background-color: black;
+  color: white;
+  align-items: baseline;
+  padding: 8px 16px;
+  border: 0.5px solid white;
+}
+
+@media screen and (max-width: 1024px) {
+  header {
+    width: 50%;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .posterBox {
+    width: 60%;
+    display: flex;
+  }
+
+  .poster {
+    justify-items: center;
+  }
+}
+
+@media screen and (max-width: 394px) {
+  .h1title {
+    font-size: 25px;
+  }
+
+  header {
+    width: 60%;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .posterBox {
+    width: 90%;
+    display: flex;
+  }
+
+  .poster {
+    justify-items: center;
+  }
+  .info {
+    width: 90%;
+  }
+  input {
+    width: 163px;
+  }
+}
