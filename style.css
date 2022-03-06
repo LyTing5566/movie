@@ -140,6 +140,36 @@ h3 {
   }
 }
 
+@media screen and (max-width: 804px) {
+  .h1title {
+    font-size: 25px;
+  }
+
+  .movieData {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 489px) {
+  .h1title {
+    font-size: 15px;
+  }
+  .h3tag {
+    font-size: 12px;
+  }
+
+  .movieData {
+    font-size: 10px;
+  }
+
+  .movieData {
+    font-size: 8px;
+  }
+  .ptag {
+    font-size: 6px;
+  }
+}
+
 @media screen and (max-width: 394px) {
   .h1title {
     font-size: 25px;
@@ -168,5 +198,9 @@ h3 {
   }
   input {
     width: 163px;
+  }
+
+  .movieData {
+    font-size: 15px;
   }
 }

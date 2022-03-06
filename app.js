@@ -16,11 +16,7 @@ const min = document.querySelector(".min");
 const money = document.querySelector(".money");
 const number = document.querySelector(".number");
 
-// https://api.themoviedb.org/3/search/movie?api_key=68449ab72f738a13ab758ff72962cd8b&language=en-US&page=1&include_adult=false   //avgs
-// https://api.themoviedb.org/3/search/movie?query=%1917&api_key=cfe422613b250f702980a3bbf9e90716  //git
-//https://api.themoviedb.org/3/search/movie?api_key=68449ab72f738a13ab758ff72962cd8b&language=en-US&query=pi&page=1&include_adult=false  //me
-
-search.addEventListener("click", async (e) => {
+search.addEventListener("click", async () => {
   const input = document.querySelector(".input");
 
   movieName = input.value;
@@ -102,4 +98,3 @@ const fetchID = function (movieID) {
       console.log(data);
     });
 };
-console.dir(h1title);
