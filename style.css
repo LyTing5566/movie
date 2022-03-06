@@ -151,6 +151,12 @@ h3 {
 }
 
 @media screen and (max-width: 489px) {
+  .posterBox {
+    width: 100%;
+  }
+  .info {
+    width: 100%;
+  }
   .h1title {
     font-size: 15px;
   }
