@@ -60,8 +60,8 @@ const fetchID = function (movieID) {
         tagline: data.tagline,
         overview: data.overview,
         vote_average: data.vote_average,
-        genres: [...data.genres],
-        production_companies: [...data.production_companies],
+        genres: data.genres,
+        production_companies: data.production_companies,
       };
 
       const mix = `${imgURL}${movieOb.poster_path}`;
@@ -73,18 +73,18 @@ const fetchID = function (movieID) {
       h1title.textContent = movieOb.title;
       moviewTextInfo.textContent = movieOb.overview;
 
-      let genresString = [];
-      movieOb.genres.map((name) => {
-        genresString.push(name.name);
-      });
-      genres.textContent = genresString.toString();
+      genres.textContent = movieOb.genres
+        .map((name) => {
+          return name.name;
+        })
+        .toString();
 
-      let genresCompanies = [];
-      movieOb.production_companies.map((name) => {
-        genresCompanies.push(name.name);
-      });
-      console.log(genresCompanies);
-      companies.textContent = genresCompanies.toString();
+      // console.log(genresCompanies);
+      companies.textContent = movieOb.production_companies
+        .map((name) => {
+          return name.name;
+        })
+        .toString();
 
       day.textContent = movieOb.release_date;
       min.textContent = movieOb.runtime + " mins";
