@@ -79,7 +79,7 @@ const fetchID = function (movieID) {
         })
         .toString();
 
-      // console.log(genresCompanies);
+      console.log(genresCompanies);
       companies.textContent = movieOb.production_companies
         .map((name) => {
           return name.name;
