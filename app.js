@@ -16,14 +16,13 @@ const min = document.querySelector(".min");
 const money = document.querySelector(".money");
 const number = document.querySelector(".number");
 
-search.addEventListener("click", async () => {
+search.addEventListener("click", () => {
   const input = document.querySelector(".input");
-
-  movieName = input.value;
-
-  const movieobjc = await fetchMovieName(movieName);
   const poster = document.querySelector(".poster");
   poster.remove();
+
+  movieName = input.value;
+  fetchMovieName(movieName);
 });
 
 const fetchMovieName = async function (movieName) {
@@ -79,7 +78,8 @@ const fetchID = function (movieID) {
         })
         .toString();
 
-      console.log(genresCompanies);
+      // console.log(genresCompanies);
+
       companies.textContent = movieOb.production_companies
         .map((name) => {
           return name.name;
